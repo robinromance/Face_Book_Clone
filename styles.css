@@ -144,10 +144,7 @@
     left: 20px;
     color: white;
 }
-.storyReel{
-    display: flex;
-    padding: 10px 0;
-}
+
 .main__body{
     display: flex;
 }
@@ -160,13 +157,29 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+}
+.reelScroll{
+    background-color: #f1f2f5;;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 645px;
+    height: 220px;
+    border-radius: 5px;
+}
+.reelScroll::-webkit-scrollbar{
+    display: none;
+}
+.storyReel{
+    display: flex;
+    flex-direction: row;
 }
 .messageSender__top img{
     border-radius: 50%;
     width: 45px;
 }
-/* messageSender */
+
 .messageSender{
     display: flex;
     margin-top: 30px;
